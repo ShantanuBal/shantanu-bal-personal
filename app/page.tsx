@@ -1,65 +1,284 @@
-import Image from "next/image";
+import PhotoLightbox from "./components/PhotoLightbox";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="max-w-2xl mx-auto px-6 py-20 text-slate-900">
+      {/* Hero */}
+      <section className="mb-20">
+        <div className="flex items-center gap-5 mb-4">
+          <PhotoLightbox />
+          <div>
+            <h1 className="text-3xl font-semibold tracking-tight mb-1">Shantanu Bal</h1>
+            <p className="text-slate-500 text-sm">
+              Senior Software Engineer &middot; Seattle &rarr; New York
+            </p>
+          </div>
+        </div>
+        <p className="text-slate-600 leading-relaxed mb-3">
+          10+ years building distributed, cloud-native systems at scale — most recently at Amazon
+          and Axon. Now focused on applying that depth to financial technology.
+        </p>
+        <p className="text-slate-600 leading-relaxed mb-8">
+          Currently building{" "}
+          <a
+            href="https://usehorizon.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Horizon
+          </a>
+          , an AI-powered platform making financial market insights accessible to everyday
+          investors — a direct expression of where I want the next chapter of my career to go.
+        </p>
+
+        <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          <a
+            href="https://github.com/ShantanuBal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-500 hover:text-blue-600 transition-colors"
+          >
+            GitHub
+          </a>
+          <span className="text-slate-300">&middot;</span>
+          <a
+            href="https://www.linkedin.com/in/shantanubal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-500 hover:text-blue-600 transition-colors"
+          >
+            LinkedIn
+          </a>
+          <span className="text-slate-300">&middot;</span>
+          <a
+            href="mailto:shantanu.r.bal@gmail.com"
+            className="text-slate-500 hover:text-blue-600 transition-colors"
+          >
+            shantanu.r.bal@gmail.com
+          </a>
+          <span className="text-slate-300">&middot;</span>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-500 hover:text-blue-600 transition-colors"
+          >
+            Resume &darr;
+          </a>
+        </div>
+      </section>
+
+      {/* Journey */}
+      <section className="mb-20">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-8">
+          My Journey So Far
+        </h2>
+        <div className="text-slate-600 leading-relaxed">
+          <p>
+            I grew up in Chennai, South India, studied Computer Science there, and went on
+            to earn a postgraduate diploma in management from IIM Ranchi and a Master&apos;s
+            in Computer Science from USC in Los Angeles. I then spent nine years at Amazon —
+            working across devices, Alexa, Prime Air, and Amazon Robotics — before joining
+            Axon, where I&apos;ve been building cloud infrastructure for vehicle intelligence. Now I&apos;m drawn to the intersection of finance and technology, and building
+            Horizon made that concrete. The next chapter is New York.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Projects */}
+      <section className="mb-20">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-8">
+          Personal Projects
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
+              <a
+                href="https://usehorizon.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:text-blue-600 transition-colors"
+              >
+                Horizon ↗
+              </a>
+              <span className="text-sm text-slate-400 font-[family-name:var(--font-geist-mono)]">
+                Next.js &middot; AWS &middot; TypeScript &middot; Claude API
+              </span>
+            </div>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              AI-powered financial market insights platform covering stocks, options chains,
+              economic indicators, bonds, currencies, and commodities. Built on Next.js 16,
+              DynamoDB, ECS, and the Anthropic Claude API. Live at usehorizon.dev.
+            </p>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
+              <a
+                href="https://www.seattle-anti-freeze.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:text-blue-600 transition-colors"
+              >
+                Seattle Anti-Freeze ↗
+              </a>
+              <span className="text-sm text-slate-400 font-[family-name:var(--font-geist-mono)]">
+                Next.js &middot; AWS &middot; TypeScript
+              </span>
+            </div>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              Social community platform for Seattle residents to discover local events,
+              meetups, and make real-world connections. Full-stack Next.js app with
+              authentication, payments, and AWS CDK infrastructure.
+            </p>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
+              <a
+                href="https://raspberry-pi-motion-detection.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:text-blue-600 transition-colors"
+              >
+                Home Motion Detector ↗
+              </a>
+              <span className="text-sm text-slate-400 font-[family-name:var(--font-geist-mono)]">
+                Python &middot; OpenCV &middot; AWS S3
+              </span>
+            </div>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              Real-time motion detection system on Raspberry Pi 5 using OpenCV. Captures images
+              and video clips, uploads to AWS S3, and serves a live auto-refreshing web
+              dashboard.
+            </p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Work Experience */}
+      <section className="mb-20">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-8">
+          Work Experience
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
+              <span className="font-medium">Senior Software Engineer</span>
+              <span className="text-sm text-slate-400">Sept 2025 – Present</span>
+            </div>
+            <div className="text-slate-500 text-sm mb-2">Axon Enterprise, Inc.</div>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              Designed cloud services that ingest, enrich, and store License Plate Recognition
+              data streamed from edge devices. Built a multi-tenant indexing layer for fast
+              search at scale and integrated real-time hotlist hit alerting pipelines.
+            </p>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
+              <span className="font-medium">Senior Software Engineer</span>
+              <span className="text-sm text-slate-400">May 2022 – Dec 2024</span>
+            </div>
+            <div className="text-slate-500 text-sm mb-2">Amazon.com Services LLC</div>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              Led the cloud data platform for Amazon Robotics, managing the full ML model
+              lifecycle — training, dataset curation, continual retraining, deployment, and
+              real-time performance monitoring — across fulfillment centers. Led a
+              first-of-its-kind A/B testing infrastructure for robotic work cells.
+            </p>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
+              <span className="font-medium">Software Development Engineer</span>
+              <span className="text-sm text-slate-400">Jan 2016 – Apr 2022</span>
+            </div>
+            <div className="text-slate-500 text-sm mb-2">Amazon.com Services LLC</div>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              Shipped production software across four orgs: Robotics (Python micro-services for
+              robotic orchestration), Prime Air (drone delivery on amazon.com), Alexa
+              (third-party developer monetization platform and EU launch in Germany), and Device
+              Services (IoT device onboarding via Bluetooth with iOS/Android libraries).
+            </p>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
+              <span className="font-medium">Software Engineer</span>
+              <span className="text-sm text-slate-400">May 2011 – May 2012</span>
+            </div>
+            <div className="text-slate-500 text-sm mb-2">Global Analytics India Ltd.</div>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              Built Django web applications for customer-facing financial products.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="mb-20">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-8">
+          Education
+        </h2>
+        <div className="space-y-4">
+          <div>
+            <div className="font-medium text-sm">Master of Science, Computer Science</div>
+            <div className="text-slate-500 text-sm">
+              University of Southern California, Los Angeles
+            </div>
+          </div>
+          <div>
+            <div className="font-medium text-sm">Postgraduate Diploma in Management</div>
+            <div className="text-slate-500 text-sm">
+              Indian Institute of Management, Ranchi, India
+            </div>
+          </div>
+          <div>
+            <div className="font-medium text-sm">
+              Bachelor of Engineering, Computer Science &amp; Engineering
+            </div>
+            <div className="text-slate-500 text-sm">Anna University, Chennai, India</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section className="mb-20">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-8">
+          Skills
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {[
+            "AWS",
+            "Java",
+            "Python",
+            "TypeScript",
+            "SQL",
+            "Distributed Systems",
+            "Event-Driven Architecture",
+            "ML Operations",
+            "Data Platforms",
+            "DevOps",
+            "Next.js",
+            "DynamoDB",
+            "ECS / Fargate",
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="text-xs px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-slate-600"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-100 pt-8 text-sm text-slate-400">
+        <p>shantanu.r.bal@gmail.com &middot; (408) 609-8216 &middot; Seattle, WA</p>
+      </footer>
+    </main>
   );
 }
