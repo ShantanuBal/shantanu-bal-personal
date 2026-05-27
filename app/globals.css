@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
@@ -15,4 +17,14 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+.dark body {
+  background: radial-gradient(ellipse at 50% 0%, #0d1a3a 0%, #060614 55%);
+  min-height: 100vh;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.8; }
+  to   { opacity: 0.1; }
 }

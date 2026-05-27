@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import ThemeToggle from "./components/ThemeToggle";
+import StarField from "./components/StarField";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -53,7 +55,16 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var t=localStorage.getItem('theme')||'light';document.documentElement.classList.toggle('dark',t==='dark');})();`,
+          }}
+        />
+      </head>
       <body className="min-h-full font-[family-name:var(--font-geist-sans)]">
+        <StarField />
+        <ThemeToggle />
         {children}
         <Analytics />
       </body>
