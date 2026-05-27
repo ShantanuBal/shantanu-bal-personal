@@ -280,18 +280,25 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap gap-2">
           {[
+            "Object-Oriented Programming",
+            "Software Design",
+            "Distributed Systems",
+            "Event-Driven Architecture",
+            "ML Operations",
+            "Data Platforms",
             "AWS",
             "Java",
             "Python",
             "TypeScript",
             "SQL",
-            "Distributed Systems",
-            "Event-Driven Architecture",
-            "ML Operations",
-            "Data Platforms",
             "DevOps",
             "Next.js",
             "DynamoDB",
+            "S3",
+            "Athena",
+            "Lambda",
+            "Step Functions",
+            "API Gateway",
             "ECS / Fargate",
           ].map((skill) => (
             <span
