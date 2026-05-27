@@ -9,20 +9,35 @@ export default async function Image() {
     (
       <div
         style={{
-          background: "#ffffff",
+          background: "#060614",
           width: "100%",
           height: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           padding: "100px",
+          position: "relative",
         }}
       >
+        {/* Subtle top glow */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "800px",
+            height: "2px",
+            background: "linear-gradient(90deg, transparent, #22d3ee55, transparent)",
+            display: "flex",
+          }}
+        />
+
         <div
           style={{
             fontSize: 88,
             fontWeight: 700,
-            color: "#0f172a",
+            color: "#ffffff",
             lineHeight: 1,
             letterSpacing: "-3px",
             display: "flex",
@@ -33,29 +48,18 @@ export default async function Image() {
         <div
           style={{
             fontSize: 36,
-            color: "#64748b",
+            color: "#94a3b8",
             fontWeight: 400,
             display: "flex",
             marginTop: "24px",
           }}
         >
-          Senior Software Engineer
-        </div>
-        <div
-          style={{
-            fontSize: 28,
-            color: "#94a3b8",
-            fontWeight: 400,
-            display: "flex",
-            marginTop: "12px",
-          }}
-        >
-          Seattle → New York · Fintech
+          Software Engineer
         </div>
         <div
           style={{
             fontSize: 24,
-            color: "#3b82f6",
+            color: "#22d3ee",
             fontWeight: 400,
             display: "flex",
             marginTop: "40px",
