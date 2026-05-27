@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://shantanubal.com",
   },
+  verification: {
+    google: "EYkGvTxDFNVMP5W0w9fD5ukJwMMTtheAqgIMBj8MD3g",
+  },
 };
 
 export default function RootLayout({
