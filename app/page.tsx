@@ -107,7 +107,7 @@ export default function Home() {
             I grew up in Chennai, South India, studied Computer Science there, and went on
             to earn a postgraduate diploma in management from IIM Ranchi and a Master&apos;s
             in Computer Science from USC in Los Angeles. I then spent nine years at Amazon as a software engineer —
-            working across devices, Alexa, Prime Air, and Amazon Robotics — before joining
+            working across Kindle, Alexa, Prime Air, and Amazon Robotics — before joining
             Axon, where I&apos;ve been building cloud infrastructure for vehicle intelligence.
             Now I&apos;m drawn to the intersection of finance and technology, and building
             Horizon made that concrete. The next chapter is New York.
