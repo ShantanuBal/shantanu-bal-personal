@@ -14,20 +14,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shantanubal.com"),
   title: "Shantanu Bal",
   description:
     "Senior software engineer with 10+ years building distributed systems at scale. Focused on financial technology.",
+  authors: [{ name: "Shantanu Bal", url: "https://shantanubal.com" }],
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Shantanu Bal",
     description:
       "Senior software engineer with 10+ years building distributed systems at scale. Focused on financial technology.",
+    url: "https://shantanubal.com",
+    siteName: "Shantanu Bal",
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Shantanu Bal",
     description:
       "Senior software engineer with 10+ years building distributed systems at scale. Focused on financial technology.",
+  },
+  alternates: {
+    canonical: "https://shantanubal.com",
   },
 };
 

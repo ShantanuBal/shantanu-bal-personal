@@ -1,8 +1,33 @@
 import PhotoLightbox from "./components/PhotoLightbox";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Shantanu Bal",
+  url: "https://shantanubal.com",
+  jobTitle: "Senior Software Engineer",
+  description:
+    "Senior software engineer with 10+ years building distributed systems at scale. Focused on financial technology.",
+  sameAs: [
+    "https://github.com/ShantanuBal",
+    "https://www.linkedin.com/in/shantanubal/",
+  ],
+  knowsAbout: [
+    "Distributed Systems",
+    "Cloud Computing",
+    "AWS",
+    "Financial Technology",
+    "Machine Learning Operations",
+  ],
+};
+
 export default function Home() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-20 text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="mb-20">
         <div className="flex items-center gap-5 mb-4">
