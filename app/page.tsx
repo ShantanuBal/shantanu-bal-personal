@@ -314,7 +314,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-slate-100 dark:border-slate-800 pt-8 text-sm text-slate-400 dark:text-slate-600">
-        <p>shantanu.r.bal@gmail.com &middot; (408) 609-8216 &middot; Seattle, WA</p>
+        <p>shantanu.r.bal@gmail.com &middot; Seattle, WA</p>
       </footer>
     </main>
   );
