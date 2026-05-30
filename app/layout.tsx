@@ -63,7 +63,6 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full font-[family-name:var(--font-geist-sans)]">
-        <StarField />
         <ThemeToggle />
         {children}
         <Analytics />
