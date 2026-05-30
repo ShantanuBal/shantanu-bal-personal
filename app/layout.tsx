@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import ThemeToggle from "./components/ThemeToggle";
-import StarField from "./components/StarField";
 import "./globals.css";
 
 const geistSans = Geist({
