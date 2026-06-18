@@ -110,7 +110,7 @@ export default function Home() {
             working across Kindle, Alexa, Prime Air, and Amazon Robotics — before joining
             Axon, where I&apos;ve been building cloud infrastructure for vehicle intelligence.
             Now I&apos;m drawn to the intersection of finance and technology, and building
-            Horizon made that concrete. The next chapter is New York.
+            Horizon made that concrete.
           </p>
         </div>
       </section>
