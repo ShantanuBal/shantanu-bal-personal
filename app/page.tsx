@@ -108,9 +108,7 @@ export default function Home() {
             to earn a postgraduate diploma in management from IIM Ranchi and a Master&apos;s
             in Computer Science from USC in Los Angeles. I then spent nine years at Amazon as a software engineer —
             working across Kindle, Alexa, Prime Air, and Amazon Robotics — before joining
-            Axon, where I&apos;ve been building cloud infrastructure for vehicle intelligence.
-            Now I&apos;m drawn to the intersection of finance and technology, and building
-            Horizon made that concrete.
+            Axon, where I built distributed cloud systems to ingest sensor data from edge devices.
           </p>
         </div>
       </section>
@@ -195,7 +193,7 @@ export default function Home() {
           <div>
             <div className="flex justify-between items-baseline flex-wrap gap-x-4 mb-0.5">
               <span className="font-medium dark:text-slate-100">Senior Software Engineer</span>
-              <span className="text-sm text-slate-400 dark:text-slate-500">Sept 2025 – Present</span>
+              <span className="text-sm text-slate-400 dark:text-slate-500">Sept 2025 – May 2026</span>
             </div>
             <div className="text-slate-500 dark:text-slate-500 text-sm mb-2">Axon Enterprise, Inc.</div>
             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
