@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
           10+ years building distributed, cloud-native systems at scale — most recently at Amazon
-          and Axon. Now focused on applying that depth to financial technology.
+          and Axon.
         </p>
         <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
           Currently building{" "}
@@ -57,7 +57,7 @@ export default function Home() {
             Horizon
           </a>
           , an AI-powered platform making financial market insights accessible to everyday
-          investors — a direct expression of where I want the next chapter of my career to go.
+          investors.
         </p>
 
         <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
