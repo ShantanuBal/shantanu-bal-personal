@@ -38,7 +38,7 @@ export default function Home() {
               Shantanu Bal
             </h1>
             <p className="text-slate-500 dark:text-slate-400 text-sm">
-              Senior Software Engineer
+              Software Engineer
             </p>
           </div>
         </div>
